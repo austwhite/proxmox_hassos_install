@@ -84,7 +84,7 @@ msg "Getting URL for latest Home Assistant disk image..."
 RELEASE_EXT=vmdk.gz
 URL=$(cat<<EOF | python3
 import requests
-url = "https://api.github.com/repos/home-assistant/operating-system/releases/25523659"
+url = 'https://api.github.com/repos/home-assistant/hassos/releases/25523659'
 r = requests.get(url).json()
 if 'message' in r:
   exit()
